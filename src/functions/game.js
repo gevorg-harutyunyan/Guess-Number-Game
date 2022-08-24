@@ -10,7 +10,7 @@ const getNumberArr = (digits) => {
   return arr
 }
 
-const getNullArr = (digits) => Array(digits).fill(null)
+const getNullArr = (size) => Array(size).fill(null)
 
 const guessNumberGame = (digits = 4) => {
   let predictionIndex
@@ -52,4 +52,4 @@ const guessNumberGame = (digits = 4) => {
   }
 }
 
-export const game = guessNumberGame(4)
+export const game = guessNumberGame()
